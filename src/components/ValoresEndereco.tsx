@@ -22,12 +22,9 @@ export function ValoresEndereco() {
 
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-2xl font-bold text-[bg-white ] mb-6">Onde estamos</h2>
-        <p className="text-gray-700 text-xl mb-6">Av. Penetração Norte, 235 - apt101 - Conj. Esperança, Fortaleza - CE, 60713-360</p>
-        <p className="text-gray-700 mb-6">
-          Visite a loja física da Talimpo Conjunto Esperança! Estamos de portas abertas para te receber com os melhores produtos de limpeza.
-        </p>
+        <p className="text-gray-700 text-xl mb-6">Av. 1, 001 - Siqueira, Fortaleza - CE, 00000-000</p>
 
-        <div className="w-full h-[500px] rounded-2xl overflow-hidden shadow-lg border-4 border-[#cceeff]">
+        <div className="w-full h-[500px] rounded-2xl overflow-hidden shadow-lg border-4 border-[#ffb1b1]">
           <iframe
             title="Mapa da loja TaLimpo Thalita"
             src="https://www.google.com/maps/embed?pb=!4v1744600405300!6m8!1m7!1sRYmEG6sFuy8j9s-JHJE1kA!2m2!1d-3.815160932121832!2d-38.58630515531728!3f153.0218362254209!4f-2.920714511647347!5f1.9587109090973311"
