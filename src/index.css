@@ -1,55 +1,71 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .animate-slide-in-right {
-    animation: slide-in-right 0.3s ease-out;
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 0 100% 57%; /* #F92828 */
+    --primary-foreground: 0 0% 100%; /* White text on red */
+
+    --secondary: 0 0% 100%; /* White */
+    --secondary-foreground: 0 100% 57%; /* Red text on white */
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 48 100% 50%; /* Yellow */
+    --accent-foreground: 0 0% 0%; /* Black text on yellow */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 0 100% 57%; /* Red ring */
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
   }
 
-  @keyframes slide-in-right {
-    from {
-      transform: translateX(100%);
-    }
-    to {
-      transform: translateX(0%);
-    }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-aquinos-red;
+  }
+  
+  button {
+    @apply transition-all duration-200;
   }
 }
 
-@layer utilities {
-  .animate-slide {
-    animation: slide 30s linear infinite;
+@layer components {
+  .card-shadow {
+    @apply shadow-lg hover:shadow-xl transition-shadow duration-300;
   }
-
-  @keyframes slide {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
+  
+  .product-card {
+    @apply bg-white rounded-lg overflow-hidden card-shadow;
   }
-}
-
-
-body {
-  background-color:#fef7f7;
-}
-
-.swiper-pagination-bullet {
-  background-color: #ddd; /* cor dos bullets inativos */
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #9b0000; /* cor dos bullets ativos */
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  color: white;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
+  
+  .price-tag {
+    @apply bg-aquinos-yellow text-aquinos-red font-bold rounded-full px-4 py-1;
+  }
 }
