@@ -126,7 +126,7 @@ const CardapioPage: React.FC = () => {
                       <img 
                         src={product.image} 
                         alt={product.name} 
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                       />
                       <div className="absolute top-2 right-2">
                         <span className="price-tag">

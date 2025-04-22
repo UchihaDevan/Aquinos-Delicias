@@ -53,7 +53,7 @@ const HeroBanner: React.FC = () => {
         >
           {/* Banner Background */}
           <div 
-            className="absolute inset-0 bg-cover bg-center"
+            className="absolute inset-0 bg-contain bg-center"
             style={{ backgroundImage: `url(${banner.image})` }}
           >
             <div className="absolute inset-0 bg-gradient-to-r from-aquinos-red/80 to-aquinos-red/40"></div>
