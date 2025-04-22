@@ -16,21 +16,21 @@ const products = {
       name: "Escondidinho de Carne Seca",
       description: "Purê de mandioca cremoso recheado com carne seca desfiada, catupiry e queijo coalho gratinado",
       price: 32.90,
-      image: "/placeholder.svg"
+      image: "/placeholder.png"
     },
     {
       id: 2,
       name: "Escondidinho de Frango",
       description: "Purê de batata com recheio de frango desfiado, milho, catupiry e queijo gratinado",
       price: 28.90,
-      image: "/placeholder.svg"
+      image: "/placeholder.png"
     },
     {
       id: 3,
       name: "Escondidinho de Carne Moída",
       description: "Purê de batata com recheio de carne moída temperada, ervilhas e queijo gratinado",
       price: 30.90,
-      image: "/placeholder.svg"
+      image: "/placeholder.png"
     }
   ],
   especiais: [
@@ -39,14 +39,14 @@ const products = {
       name: "Escondidinho do Chef",
       description: "Purê de mandioca com mix de carnes (carne seca, frango e calabresa), queijo especial e temperos da casa",
       price: 38.90,
-      image: "/placeholder.svg"
+      image: "/placeholder.png"
     },
     {
       id: 5,
       name: "Escondidinho de Camarão",
       description: "Purê de mandioca com camarões grelhados no alho e óleo, catupiry e queijo gratinado",
       price: 42.90,
-      image: "/placeholder.svg"
+      image: "/placeholder.png"
     }
   ],
   fit: [
@@ -55,14 +55,14 @@ const products = {
       name: "Escondidinho Fit",
       description: "Purê de batata doce com frango desfiado temperado com ervas, queijo cottage e leve gratinado",
       price: 34.90,
-      image: "/placeholder.svg"
+      image: "/placeholder.png"
     },
     {
       id: 7,
       name: "Escondidinho Vegetariano",
       description: "Purê de mandioca com mix de legumes, proteína de soja e queijo vegano",
       price: 29.90,
-      image: "/placeholder.svg"
+      image: "/placeholder.png"
     }
   ],
   sobremesas: [
@@ -71,14 +71,14 @@ const products = {
       name: "Pudim de Leite",
       description: "Pudim de leite condensado tradicional com calda de caramelo",
       price: 12.90,
-      image: "/placeholder.svg"
+      image: "/placeholder.png"
     },
     {
       id: 9,
       name: "Mousse de Chocolate",
       description: "Mousse de chocolate cremoso com raspas de chocolate meio amargo",
       price: 10.90,
-      image: "/placeholder.svg"
+      image: "/placeholder.png"
     }
   ]
 };

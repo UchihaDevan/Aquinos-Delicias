@@ -12,28 +12,28 @@ const products = [
     name: "Escondidinho de Carne Seca",
     description: "Purê de mandioca cremoso recheado com carne seca desfiada",
     price: 32.90,
-    image: "/placeholder.svg"
+    image: "/placeholder.png"
   },
   {
     id: 2,
     name: "Escondidinho de Frango",
     description: "Purê de batata com recheio de frango desfiado e queijo",
     price: 28.90,
-    image: "/placeholder.svg"
+    image: "/placeholder.png"
   },
   {
     id: 3,
     name: "Escondidinho Fit",
     description: "Purê de batata doce com recheio de frango light",
     price: 34.90,
-    image: "/placeholder.svg"
+    image: "/placeholder.png"
   },
   {
     id: 4,
     name: "Escondidinho Vegetariano",
     description: "Purê de mandioca com recheio de legumes",
     price: 29.90,
-    image: "/placeholder.svg"
+    image: "/placeholder.png"
   }
 ];
 

@@ -9,7 +9,7 @@ const banners = [
     id: 1,
     title: "Escondidinhos Saborosos",
     subtitle: "Uma explosão de sabores em cada garfada",
-    image: "/placeholder.svg",
+    image: "/placeholder.png",
     buttonText: "Ver Cardápio",
     buttonLink: "/cardapio"
   },
@@ -17,7 +17,7 @@ const banners = [
     id: 2,
     title: "Promoção da Semana",
     subtitle: "Escondidinho de Carne Seca com 15% de desconto",
-    image: "/placeholder.svg",
+    image: "/placeholder.png",
     buttonText: "Pedir Agora",
     buttonLink: "/cardapio"
   },
@@ -25,7 +25,7 @@ const banners = [
     id: 3,
     title: "Entrega Rápida",
     subtitle: "Seu pedido na sua casa em tempo recorde",
-    image: "/placeholder.svg",
+    image: "/placeholder.png",
     buttonText: "Fazer Pedido",
     buttonLink: "/cardapio"
   }
