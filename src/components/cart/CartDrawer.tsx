@@ -114,27 +114,95 @@ const CartDrawer: React.FC<CartDrawerProps> = ({ open, onClose }) => {
               {addresses.length === 0 ? (
                 <form onSubmit={form.handleSubmit(handleSaveAddress)} className="space-y-4">
                   {/* Formulário de cadastro de endereço */}
-                  {['Rua','Numero da casa','Complemento','Bairro','Cidade','Estado'].map(name => (
-                    <FormField
-                      key={name}
-                      control={form.control}
-                      name={name as any}
-                      rules={name !== 'complement' ? { required: `${name.charAt(0).toUpperCase() + name.slice(1)} é obrigatório` } : undefined}
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>{name.charAt(0).toUpperCase() + name.slice(1)}</FormLabel>
-                          <FormControl>
-                            <Input
-                              {...field}
-                              placeholder={name === 'number' ? 'Número' : name.charAt(0).toUpperCase() + name.slice(1)}
-                              type={name === 'number' ? 'number' : 'text'}
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                  ))}
+                  <FormField
+                    control={form.control}
+                    name="street"
+                    rules={{ required: 'Rua é obrigatória' }}
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Rua</FormLabel>
+                        <FormControl>
+                          <Input placeholder="Rua" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name="number"
+                    rules={{ required: 'Número é obrigatório' }}
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Número</FormLabel>
+                        <FormControl>
+                          <Input type="number" placeholder="Número da casa" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name="complement"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Complemento</FormLabel>
+                        <FormControl>
+                          <Input placeholder="Complemento (opcional)" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name="neighborhood"
+                    rules={{ required: 'Bairro é obrigatório' }}
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Bairro</FormLabel>
+                        <FormControl>
+                          <Input placeholder="Bairro" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name="city"
+                    rules={{ required: 'Cidade é obrigatória' }}
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Cidade</FormLabel>
+                        <FormControl>
+                          <Input placeholder="Cidade" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
+                  <FormField
+                    control={form.control}
+                    name="state"
+                    rules={{ required: 'Estado é obrigatório' }}
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Estado</FormLabel>
+                        <FormControl>
+                          <Input placeholder="Estado" {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+
                   <Button type="submit" className="w-full bg-aquinos-red">
                     Salvar Endereço e Continuar
                   </Button>
